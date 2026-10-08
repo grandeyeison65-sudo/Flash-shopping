@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flash Express | Personalización de Productos</title>
+  <meta name="description" content="Flash Express - Banners, camisetas, gorras, tazas, pulseras, manualidades y más. San Isidro, Izalco. Envíos desde $2." />
+
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="apple-touch-icon" href="img/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ TOPBAR ============ -->
+  <div class="topbar">
+    <div class="topbar__track">
+      <span><i class="fa-solid fa-truck-fast"></i> Envíos desde $2 en San Isidro Izalco</span>
+      <span><i class="fa-solid fa-fire"></i> 20% OFF en tu primera compra</span>
+      <span><i class="fa-solid fa-star"></i> Diseño GRATIS en Combo Premium</span>
+      <span><i class="fa-solid fa-location-dot"></i> San Isidro, Izalco, Sonsonate</span>
+      <span><i class="fa-solid fa-truck-fast"></i> Envíos desde $2 en San Isidro Izalco</span>
+      <span><i class="fa-solid fa-fire"></i> 20% OFF en tu primera compra</span>
+      <span><i class="fa-solid fa-star"></i> Diseño GRATIS en Combo Premium</span>
+      <span><i class="fa-solid fa-location-dot"></i> San Isidro, Izalco, Sonsonate</span>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__container">
+      <a href="#inicio" class="logo">
+        <img src="img/logo.png" alt="Flash Express - Crea y Personaliza" class="logo__img">
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="nav__link">Inicio</a>
+        <a href="#servicios" class="nav__link">Productos</a>
+        <a href="#galeria" class="nav__link">Galería</a>
+        <a href="#combos" class="nav__link">Combos</a>
+        <a href="#envios" class="nav__link">Envíos</a>
+        <a href="#resenas" class="nav__link">Reseñas</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+        <a href="#contacto" class="nav__link">Contacto</a>
+      </nav>
+
+      <a href="https://wa.me/50375605466" target="_blank" class="btn btn--primary header__cta">
+        <i class="fa-brands fa-whatsapp"></i> Cotizar
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Menú">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="container">
+      <div class="hero__wrap">
+        <div class="hero__text">
+          <span class="badge"><i class="fa-solid fa-location-dot"></i> San Isidro, Izalco</span>
+          <h1>Crea y personaliza, <span class="text-accent">tu estilo en cada detalle</span></h1>
+          <p>Banners, camisetas, gorras, tazas, pulseras, manualidades y más. Diseños únicos con la mejor calidad, y envíos a todo El Salvador desde $2.</p>
+
+          <div class="hero__buttons">
+            <a href="https://wa.me/50375605466" target="_blank" class="btn btn--primary">
+              <i class="fa-brands fa-whatsapp"></i> Pedir por WhatsApp
+            </a>
+            <a href="#pedido" class="btn btn--ghost">
+              Hacer pedido <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div><strong class="contador" data-target="500">0</strong><span>Pedidos</span></div>
+            <div><strong class="contador" data-target="1200">0</strong><span>Clientes</span></div>
+            <div><strong>4.8★</strong><span>Valoración</span></div>
+          </div>
+
+          <div class="hero__info">
+            <div><i class="fa-solid fa-clock"></i> Lun–Sáb: 8am – 6pm</div>
+            <div><i class="fa-solid fa-truck"></i> Envíos $2 – $10</div>
+          </div>
+        </div>
+
+        <div class="carrusel" id="carrusel-hero">
+          <div class="carrusel__slides">
+            <div class="carrusel__slide active">
+              <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=900" alt="Camiseta personalizada">
+              <div class="carrusel__caption">
+                <h3>Camisetas únicas</h3>
+                <p>Diseños que destacan · Desde $12</p>
+              </div>
+            </div>
+            <div class="carrusel__slide">
+              <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=900" alt="Gorra personalizada">
+              <div class="carrusel__caption">
+                <h3>Gorras premium</h3>
+                <p>Bordadas o impresas · Desde $10</p>
+              </div>
+            </div>
+            <div class="carrusel__slide">
+              <img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=900" alt="Taza personalizada">
+              <div class="carrusel__caption">
+                <h3>Tazas originales</h3>
+                <p>El regalo perfecto · Desde $8</p>
+              </div>
+            </div>
+            <div class="carrusel__slide">
+              <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=900" alt="Pulseras personalizadas">
+              <div class="carrusel__caption">
+                <h3>Pulseras y manualidades</h3>
+                <p>Hechas a mano · Desde $3</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carrusel__btn carrusel__btn--prev" id="prev-hero" aria-label="Anterior">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button class="carrusel__btn carrusel__btn--next" id="next-hero" aria-label="Siguiente">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+
+          <div class="carrusel__dots" id="dots-hero">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>CAMISETAS <i class="fa-solid fa-star"></i></span>
+      <span>GORRAS <i class="fa-solid fa-star"></i></span>
+      <span>TAZAS <i class="fa-solid fa-star"></i></span>
+      <span>BANNERS <i class="fa-solid fa-star"></i></span>
+      <span>STICKERS <i class="fa-solid fa-star"></i></span>
+      <span>PULSERAS <i class="fa-solid fa-star"></i></span>
+      <span>MANUALIDADES <i class="fa-solid fa-star"></i></span>
+      <span>LLAveros <i class="fa-solid fa-star"></i></span>
+      <span>CAMISETAS <i class="fa-solid fa-star"></i></span>
+      <span>GORRAS <i class="fa-solid fa-star"></i></span>
+      <span>TAZAS <i class="fa-solid fa-star"></i></span>
+      <span>BANNERS <i class="fa-solid fa-star"></i></span>
+      <span>STICKERS <i class="fa-solid fa-star"></i></span>
+      <span>PULSERAS <i class="fa-solid fa-star"></i></span>
+      <span>MANUALIDADES <i class="fa-solid fa-star"></i></span>
+      <span>LLAveros <i class="fa-solid fa-star"></i></span>
+    </div>
+  </div>
+
+  <!-- ============ BENEFICIOS ============ -->
+  <section class="beneficios">
+    <div class="container">
+      <div class="beneficios__grid">
+        <div class="beneficio">
+          <i class="fa-solid fa-truck-fast"></i>
+          <div><h4>Envíos rápidos</h4><p>Desde $2 en Izalco</p></div>
+        </div>
+        <div class="beneficio">
+          <i class="fa-solid fa-palette"></i>
+          <div><h4>Diseño gratis</h4><p>En Combo Premium</p></div>
+        </div>
+        <div class="beneficio">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div><h4>Garantía</h4><p>30 días de respaldo</p></div>
+        </div>
+        <div class="beneficio">
+          <i class="fa-solid fa-headset"></i>
+          <div><h4>Atención directa</h4><p>Chat con el vendedor</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTOS ============ -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <div class="section__head">
+        <span class="badge">Nuestros productos</span>
+        <h2>Todo lo que podemos <span class="text-accent">personalizar</span></h2>
+        <p>Elige tu producto favorito y nosotros lo hacemos realidad.</p>
+      </div>
+
+      <div class="grid grid--4">
+        <article class="card">
+          <div class="card__img"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500" alt="Camisetas"></div>
+          <div class="card__icon"><i class="fa-solid fa-shirt"></i></div>
+          <h3>Camisetas</h3>
+          <p>Diseños únicos en tela de algodón premium.</p>
+          <span class="card__price">Desde $12</span>
+          <button class="card__btn" data-producto="Camisetas">
+            Cotizar <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500" alt="Gorras"></div>
+          <div class="card__icon"><i class="fa-solid fa-hat-cowboy"></i></div>
+          <h3>Gorras</h3>
+          <p>Bordadas o impresas, para cualquier estilo.</p>
+          <span class="card__price">Desde $10</span>
+          <button class="card__btn" data-producto="Gorras">
+            Cotizar <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=500" alt="Tazas"></div>
+          <div class="card__icon"><i class="fa-solid fa-mug-hot"></i></div>
+          <h3>Tazas</h3>
+          <p>Con frases, fotos o logos corporativos.</p>
+          <span class="card__price">Desde $8</span>
+          <button class="card__btn" data-producto="Tazas">
+            Cotizar <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500" alt="Banners"></div>
+          <div class="card__icon"><i class="fa-solid fa-flag"></i></div>
+          <h3>Banners</h3>
+          <p>Publicidad de alto impacto para tu negocio.</p>
+          <span class="card__price">Desde $15</span>
+          <button class="card__btn" data-producto="Banners">
+            Cotizar <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=500" alt="Stickers"></div>
+          <div class="card__icon"><i class="fa-solid fa-sticky-note"></i></div>
+          <h3>Stickers</h3>
+          <p>Vinil de corte o impresos a todo color.</p>
+          <span class="card__price">Desde $3</span>
+          <button class="card__btn" data-producto="Stickers">
+            Cotizar <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=500" alt="Llaveros"></div>
+          <div class="card__icon"><i class="fa-solid fa-key"></i></div>
+          <h3>Llaveros</h3>
+          <p>Acrílicos personalizados para eventos.</p>
+          <span class="card__price">Desde $4</span>
+          <button class="card__btn" data-producto="Llaveros">
+            Cotizar <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=500" alt="Pulseras"></div>
+          <div class="card__icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+          <h3>Pulseras</h3>
+          <p>Personalizadas con nombres, colores y diseños.</p>
+          <span class="card__price">Desde $3</span>
+          <button class="card__btn" data-producto="Pulseras">
+            Cotizar <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=500" alt="Manualidades"></div>
+          <div class="card__icon"><i class="fa-solid fa-palette"></i></div>
+          <h3>Manualidades</h3>
+          <p>Flores, cuadros, cajas decorativas y más.</p>
+          <span class="card__price">Desde $5</span>
+          <button class="card__btn" data-producto="Manualidades">
+            Cotizar <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=500" alt="Bolsos"></div>
+          <div class="card__icon"><i class="fa-solid fa-bag-shopping"></i></div>
+          <h3>Bolsos</h3>
+          <p>Totebags con tus diseños favoritos.</p>
+          <span class="card__price">Desde $9</span>
+          <button class="card__btn" data-producto="Bolsos">
+            Cotizar <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+
+        <article class="card">
+          <div class="card__img"><img src="https://images.unsplash.com/photo-1601593346740-925612772716?w=500" alt="Fundas"></div>
+          <div class="card__icon"><i class="fa-solid fa-mobile-screen"></i></div>
+          <h3>Fundas</h3>
+          <p>Para celulares de cualquier marca.</p>
+          <span class="card__price">Desde $7</span>
+          <button class="card__btn" data-producto="Fundas">
+            Cotizar <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TIPOS ============ -->
+  <section class="section section--dark">
+    <div class="container">
+      <div class="section__head">
+        <span class="badge badge--light">Diseños populares</span>
+        <h2 class="text-white">Lo que más <span class="text-accent">nos piden</span></h2>
+        <p class="text-light">Una muestra de los estilos que manejamos.</p>
+      </div>
+
+      <div class="tipos">
+        <div class="tipo" style="background-image: url('https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600')">
+          <div class="tipo__overlay">
+            <h3>Anime</h3>
+            <p>Personajes y estilos japoneses</p>
+          </div>
+        </div>
+        <div class="tipo" style="background-image: url('https://images.unsplash.com/photo-1551958219-acbc608c6377?w=600')">
+          <div class="tipo__overlay">
+            <h3>Fútbol</h3>
+            <p>Equipos y jugadores favoritos</p>
+          </div>
+        </div>
+        <div class="tipo" style="background-image: url('https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600')">
+          <div class="tipo__overlay">
+            <h3>Logos</h3>
+            <p>Marcas y negocios</p>
+          </div>
+        </div>
+        <div class="tipo" style="background-image: url('https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=600')">
+          <div class="tipo__overlay">
+            <h3>Frases</h3>
+            <p>Textos con estilo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALERÍA ============ -->
+  <section class="section section--alt" id="galeria">
+    <div class="container">
+      <div class="section__head">
+        <span class="badge">Portafolio</span>
+        <h2>Trabajos que <span class="text-accent">hemos hecho</span></h2>
+        <p>Inspírate con nuestros diseños más populares.</p>
+      </div>
+
+      <div class="galeria-carrusel">
+        <button class="galeria-carrusel__btn" id="gal-prev" aria-label="Anterior">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="galeria-carrusel__viewport">
+          <div class="galeria-carrusel__track" id="gal-track">
+            <div class="galeria-carrusel__item"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600" alt="Camiseta"></div>
+            <div class="galeria-carrusel__item"><img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600" alt="Gorra"></div>
+            <div class="galeria-carrusel__item"><img src="https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=600" alt="Taza"></div>
+            <div class="galeria-carrusel__item"><img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=600" alt="Stickers"></div>
+            <div class="galeria-carrusel__item"><img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600" alt="Pulsera"></div>
+            <div class="galeria-carrusel__item"><img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?w=600" alt="Manualidad"></div>
+            <div class="galeria-carrusel__item"><img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600" alt="Anime"></div>
+            <div class="galeria-carrusel__item"><img src="https://images.unsplash.com/photo-1551958219-acbc608c6377?w=600" alt="Fútbol"></div>
+            <div class="galeria-carrusel__item"><img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?w=600" alt="Bolso"></div>
+            <div class="galeria-carrusel__item"><img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=600" alt="Llavero"></div>
+          </div>
+        </div>
+
+        <button class="galeria-carrusel__btn" id="gal-next" aria-label="Siguiente">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMBOS ============ -->
+  <section class="section" id="combos">
+    <div class="container">
+      <div class="section__head">
+        <span class="badge badge--gold"><i class="fa-solid fa-gift"></i> Paquetes con descuento</span>
+        <h2>Ahorra con nuestros <span class="text-accent">combos</span></h2>
+        <p>Elige un combo completo y aprovecha descuentos exclusivos. Todos incluyen asesoría personalizada.</p>
+      </div>
+
+      <div class="grid grid--3">
+        <div class="combo-card">
+          <div class="combo-card__badge">-20%</div>
+          <div class="combo-card__icon"><i class="fa-solid fa-rocket"></i></div>
+          <h3>Combo Emprendedor</h3>
+          <p class="combo-card__desc">Ideal para arrancar tu negocio con estilo.</p>
+
+          <ul class="combo-card__lista">
+            <li><i class="fa-solid fa-check"></i> 3 Camisetas personalizadas</li>
+            <li><i class="fa-solid fa-check"></i> 3 Gorras con tu diseño</li>
+            <li><i class="fa-solid fa-check"></i> 3 Tazas personalizadas</li>
+            <li><i class="fa-solid fa-check"></i> Asesoría de diseño</li>
+          </ul>
+
+          <div class="combo-card__precio">
+            <span class="precio-viejo">$90</span>
+            <span class="precio-nuevo">$72</span>
+          </div>
+          <p class="combo-card__ahorro">Ahorras $18</p>
+
+          <a href="https://wa.me/50375605466?text=Quiero%20el%20Combo%20Emprendedor" target="_blank" class="btn btn--primary btn--full">
+            <i class="fa-brands fa-whatsapp"></i> Aprovechar combo
+          </a>
+        </div>
+
+        <div class="combo-card combo-card--featured">
+          <div class="combo-card__badge combo-card__badge--destacado">-25% · MÁS PEDIDO</div>
+          <div class="combo-card__icon"><i class="fa-solid fa-champagne-glasses"></i></div>
+          <h3>Combo Evento</h3>
+          <p class="combo-card__desc">Perfecto para fiestas, cumpleaños y eventos especiales.</p>
+
+          <ul class="combo-card__lista">
+            <li><i class="fa-solid fa-check"></i> 10 Tazas personalizadas</li>
+            <li><i class="fa-solid fa-check"></i> 20 Stickers a color</li>
+            <li><i class="fa-solid fa-check"></i> 5 Llaveros acrílicos</li>
+            <li><i class="fa-solid fa-check"></i> Empaque decorativo</li>
+            <li><i class="fa-solid fa-check"></i> Diseño exclusivo gratis</li>
+          </ul>
+
+          <div class="combo-card__precio">
+            <span class="precio-viejo">$100</span>
+            <span class="precio-nuevo">$75</span>
+          </div>
+          <p class="combo-card__ahorro">Ahorras $25</p>
+
+          <a href="https://wa.me/50375605466?text=Quiero%20el%20Combo%20Evento" target="_blank" class="btn btn--primary btn--full">
+            <i class="fa-brands fa-whatsapp"></i> Aprovechar combo
+          </a>
+        </div>
+
+        <div class="combo-card">
+          <div class="combo-card__badge">-30%</div>
+          <div class="combo-card__icon"><i class="fa-solid fa-crown"></i></div>
+          <h3>Combo Premium</h3>
+          <p class="combo-card__desc">El paquete más completo para empresas y negocios.</p>
+
+          <ul class="combo-card__lista">
+            <li><i class="fa-solid fa-check"></i> 1 Banner publicitario grande</li>
+            <li><i class="fa-solid fa-check"></i> 10 Camisetas personalizadas</li>
+            <li><i class="fa-solid fa-check"></i> 10 Gorras con logo</li>
+            <li><i class="fa-solid fa-check"></i> 10 Tazas corporativas</li>
+            <li><i class="fa-solid fa-check"></i> 10 Pulseras personalizadas</li>
+            <li><i class="fa-solid fa-check"></i> Diseño profesional gratis</li>
+          </ul>
+
+          <div class="combo-card__precio">
+            <span class="precio-viejo">$350</span>
+            <span class="precio-nuevo">$245</span>
+          </div>
+          <p class="combo-card__ahorro">Ahorras $105</p>
+
+          <a href="https://wa.me/50375605466?text=Quiero%20el%20Combo%20Premium" target="_blank" class="btn btn--primary btn--full">
+            <i class="fa-brands fa-whatsapp"></i> Aprovechar combo
+          </a>
+        </div>
+      </div>
+
+      <!-- CUPONES -->
+      <div class="section__head" style="margin-top: 80px;">
+        <span class="badge"><i class="fa-solid fa-ticket"></i> Cupones vigentes</span>
+        <h2>Descuentos <span class="text-accent">disponibles</span></h2>
+      </div>
+
+      <div class="cupones-grid">
+        <div class="cupon-card">
+          <div class="cupon-card__descuento">25%</div>
+          <div class="cupon-card__body">
+            <h4>Código: FLASH25</h4>
+            <p>Válido en tu primera compra, sin mínimo.</p>
+          </div>
+          <button class="cupon-card__btn" data-codigo="FLASH25">
+            <i class="fa-solid fa-copy"></i> Copiar
+          </button>
+        </div>
+
+        <div class="cupon-card">
+          <div class="cupon-card__descuento">20%</div>
+          <div class="cupon-card__body">
+            <h4>Código: COMBO20</h4>
+            <p>Descuento extra en cualquier combo.</p>
+          </div>
+          <button class="cupon-card__btn" data-codigo="COMBO20">
+            <i class="fa-solid fa-copy"></i> Copiar
+          </button>
+        </div>
+
+        <div class="cupon-card">
+          <div class="cupon-card__descuento">15%</div>
+          <div class="cupon-card__body">
+            <h4>Código: EVENTO15</h4>
+            <p>Especial para pedidos de eventos.</p>
+          </div>
+          <button class="cupon-card__btn" data-codigo="EVENTO15">
+            <i class="fa-solid fa-copy"></i> Copiar
+          </button>
+        </div>
+
+        <div class="cupon-card">
+          <div class="cupon-card__descuento">10%</div>
+          <div class="cupon-card__body">
+            <h4>Código: ENVIO10</h4>
+            <p>Descuento en envíos mayores a $50.</p>
+          </div>
+          <button class="cupon-card__btn" data-codigo="ENVIO10">
+            <i class="fa-solid fa-copy"></i> Copiar
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENVÍOS ============ -->
+  <section class="section section--alt" id="envios">
+    <div class="container">
+      <div class="section__head">
+        <span class="badge"><i class="fa-solid fa-truck-fast"></i> Cobertura</span>
+        <h2>Zonas y costos de <span class="text-accent">envío</span></h2>
+        <p>Basados en San Isidro, Izalco, Sonsonate. El costo varía según la distancia.</p>
+      </div>
+
+      <div class="envios-tabla">
+        <div class="envio-row envio-row--head">
+          <span>Zona</span>
+          <span>Distancia</span>
+          <span>Tiempo</span>
+          <span>Costo</span>
+        </div>
+        <div class="envio-row">
+          <span><i class="fa-solid fa-location-dot"></i> San Isidro</span>
+          <span>Local</span>
+          <span>Mismo día</span>
+          <span class="envio-precio">$2</span>
+        </div>
+        <div class="envio-row">
+          <span><i class="fa-solid fa-location-dot"></i> Izalco centro</span>
+          <span>3 km</span>
+          <span>Mismo día</span>
+          <span class="envio-precio">$3</span>
+        </div>
+        <div class="envio-row">
+          <span><i class="fa-solid fa-location-dot"></i> Sonsonate</span>
+          <span>12 km</span>
+          <span>24 horas</span>
+          <span class="envio-precio">$5</span>
+        </div>
+        <div class="envio-row">
+          <span><i class="fa-solid fa-location-dot"></i> Santa Ana / Ahuachapán</span>
+          <span>40–60 km</span>
+          <span>24–48 h</span>
+          <span class="envio-precio">$8</span>
+        </div>
+        <div class="envio-row">
+          <span><i class="fa-solid fa-location-dot"></i> San Salvador / Resto del país</span>
+          <span>60+ km</span>
+          <span>48–72 h</span>
+          <span class="envio-precio">$10</span>
+        </div>
+      </div>
+
+      <div class="envios-info">
+        <div class="envios-info__box">
+          <i class="fa-solid fa-gift"></i>
+          <div>
+            <h4>Envío GRATIS</h4>
+            <p>En compras mayores a $30 dentro de Izalco y zonas cercanas.</p>
+          </div>
+        </div>
+        <div class="envios-info__box">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+          <div>
+            <h4>Pago contra entrega</h4>
+            <p>Disponible en zonas cercanas (San Isidro, Izalco).</p>
+          </div>
+        </div>
+        <div class="envios-info__box">
+          <i class="fa-solid fa-box-open"></i>
+          <div>
+            <h4>Empaque seguro</h4>
+            <p>Cada pedido va protegido para que llegue perfecto.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FORMULARIO DE PEDIDO ============ -->
+  <section class="section section--dark" id="pedido">
+    <div class="container">
+      <div class="section__head">
+        <span class="badge badge--light">Haz tu pedido</span>
+        <h2 class="text-white">Solicita tu <span class="text-accent">cotización o envío</span></h2>
+        <p class="text-light">Llena el formulario y te contactamos por WhatsApp al instante.</p>
+      </div>
+
+      <form class="form-pedido" id="form-pedido">
+        <div class="form-pedido__grid">
+          <div class="form-group">
+            <label for="pedido-nombre">Nombre completo</label>
+            <input type="text" id="pedido-nombre" placeholder="Ej: Juan Pérez" required maxlength="40">
+          </div>
+
+          <div class="form-group">
+            <label for="pedido-telefono">Teléfono</label>
+            <input type="tel" id="pedido-telefono" placeholder="Ej: 7000-0000" required maxlength="15">
+          </div>
+
+          <div class="form-group">
+            <label for="pedido-producto">Producto deseado</label>
+            <select id="pedido-producto" required>
+              <option value="">Selecciona un producto</option>
+              <option value="Camisetas">Camisetas</option>
+              <option value="Gorras">Gorras</option>
+              <option value="Tazas">Tazas</option>
+              <option value="Banners">Banners</option>
+              <option value="Stickers">Stickers</option>
+              <option value="Llaveros">Llaveros</option>
+              <option value="Pulseras">Pulseras</option>
+              <option value="Manualidades">Manualidades</option>
+              <option value="Bolsos">Bolsos</option>
+              <option value="Fundas">Fundas</option>
+              <option value="Combo Emprendedor">Combo Emprendedor</option>
+              <option value="Combo Evento">Combo Evento</option>
+              <option value="Combo Premium">Combo Premium</option>
+              <option value="Otro">Otro (especificar)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pedido-cantidad">Cantidad</label>
+            <input type="number" id="pedido-cantidad" min="1" value="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="pedido-zona">Zona de envío</label>
+            <select id="pedido-zona" required>
+              <option value="">Selecciona tu zona</option>
+              <option value="San Isidro">San Isidro ($2)</option>
+              <option value="Izalco">Izalco centro ($3)</option>
+              <option value="Sonsonate">Sonsonate ($5)</option>
+              <option value="Santa Ana / Ahuachapán">Santa Ana / Ahuachapán ($8)</option>
+              <option value="San Salvador / Resto">San Salvador / Resto ($10)</option>
+              <option value="Recoger en tienda">Recoger en tienda (gratis)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="pedido-pago">Método de pago</label>
+            <select id="pedido-pago" required>
+              <option value="">Selecciona método</option>
+              <option value="Efectivo">Efectivo contra entrega</option>
+              <option value="Transferencia">Transferencia bancaria</option>
+              <option value="Pago móvil">Pago móvil (Chivo / Tigo)</option>
+            </select>
+          </div>
+
+          <div class="form-group form-group--full">
+            <label for="pedido-detalles">Detalles del pedido</label>
+            <textarea id="pedido-detalles" rows="4" placeholder="Cuéntanos qué diseño quieres, colores, tallas, frases, etc." maxlength="400"></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn--primary btn--lg">
+          <i class="fa-brands fa-whatsapp"></i> Enviar pedido por WhatsApp
+        </button>
+
+        <p class="form-pedido__nota">
+          <i class="fa-solid fa-lock"></i> Tus datos solo se usan para contactarte. No compartimos información.
+        </p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ CÓMO FUNCIONA ============ -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <span class="badge">Proceso</span>
+        <h2>¿Cómo <span class="text-accent">funciona</span>?</h2>
+        <p>En 4 pasos tienes tu producto personalizado.</p>
+      </div>
+
+      <div class="grid grid--4">
+        <div class="paso"><span>01</span><h4>Eliges</h4><p>Escoge producto, diseño y cantidad.</p></div>
+        <div class="paso"><span>02</span><h4>Diseñamos</h4><p>Nuestro equipo crea tu propuesta.</p></div>
+        <div class="paso"><span>03</span><h4>Apruebas</h4><p>Revisas y das el visto bueno.</p></div>
+        <div class="paso"><span>04</span><h4>Recibes</h4><p>Entregamos en el tiempo acordado.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RESEÑAS ============ -->
+  <section class="section" id="resenas">
+    <div class="container">
+      <div class="section__head">
+        <span class="badge">Opiniones reales</span>
+        <h2>Lo que dicen nuestros <span class="text-accent">clientes</span></h2>
+        <p>Tu opinión nos ayuda a mejorar cada día.</p>
+      </div>
+
+      <div class="resumen">
+        <div class="resumen__promedio">
+          <div class="resumen__numero" id="promedio-numero">0.0</div>
+          <div class="estrellas" id="promedio-estrellas">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p id="promedio-total">Basado en 0 reseñas</p>
+        </div>
+
+        <div class="resumen__barras" id="barras-estrellas"></div>
+      </div>
+
+      <form class="form-resena" id="form-resena">
+        <h3>Deja tu reseña</h3>
+
+        <div class="form-group">
+          <label for="nombre">Tu nombre</label>
+          <input type="text" id="nombre" placeholder="Ej: María López" required maxlength="30">
+        </div>
+
+        <div class="form-group">
+          <label>Tu puntuación</label>
+          <div class="estrellas-input" id="estrellas-input">
+            <i class="fa-regular fa-star" data-valor="1"></i>
+            <i class="fa-regular fa-star" data-valor="2"></i>
+            <i class="fa-regular fa-star" data-valor="3"></i>
+            <i class="fa-regular fa-star" data-valor="4"></i>
+            <i class="fa-regular fa-star" data-valor="5"></i>
+          </div>
+          <input type="hidden" id="puntuacion" value="0">
+        </div>
+
+        <div class="form-group">
+          <label for="comentario">Tu comentario</label>
+          <textarea id="comentario" rows="4" placeholder="Cuéntanos tu experiencia..." required maxlength="300"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--primary">
+          <i class="fa-solid fa-paper-plane"></i> Publicar reseña
+        </button>
+      </form>
+
+      <div class="resenas-lista" id="resenas-lista"></div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <span class="badge">Preguntas frecuentes</span>
+        <h2>Resolvemos tus <span class="text-accent">dudas</span></h2>
+        <p>Lo que más nos preguntan nuestros clientes.</p>
+      </div>
+
+      <div class="faq">
+        <div class="faq-item">
+          <button class="faq-item__q">
+            <span>¿Cuánto tarda un pedido?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-item__a">
+            <p>Entre 2 y 3 días hábiles para productos estándar. Los pedidos del Combo Premium se entregan en 5 días por la cantidad de productos.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q">
+            <span>¿Hacen envíos a todo el país?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-item__a">
+            <p>Sí, enviamos a todo El Salvador. El costo varía entre $2 y $10 según la zona. Dentro de Izalco el envío puede ser gratis si tu compra supera $30.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q">
+            <span>¿Puedo combinar productos de distintos combos?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-item__a">
+            <p>¡Claro! Puedes personalizar tu combo según lo que necesites. Escríbenos por WhatsApp y armamos un paquete a tu medida con el descuento correspondiente.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q">
+            <span>¿Necesito llevar mi propio diseño?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-item__a">
+            <p>No necesariamente. Puedes darnos una idea, una imagen o una frase y nuestro equipo de diseño la trabaja. En el Combo Premium el diseño va gratis.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q">
+            <span>¿Qué personalizan en manualidades?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-item__a">
+            <p>Hacemos flores decorativas, cuadros personalizados, cajas para regalo, y otros detalles hechos a mano. Escríbenos con tu idea y la hacemos realidad.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q">
+            <span>¿Qué métodos de pago aceptan?</span>
+            <i class="fa-solid fa-chevron-down"></i>
+          </button>
+          <div class="faq-item__a">
+            <p>Efectivo contra entrega, transferencia bancaria y pago móvil (Chivo, Tigo Money).</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section__head">
+        <span class="badge">Contáctanos</span>
+        <h2>¿Listo para <span class="text-accent">crear algo único</span>?</h2>
+        <p>Escríbenos y te respondemos al instante.</p>
+      </div>
+
+      <div class="grid grid--4 contactos">
+        <a href="https://wa.me/50375605466" target="_blank" class="contacto-card">
+          <i class="fa-brands fa-whatsapp"></i>
+          <h4>WhatsApp</h4>
+          <p>+503 7560-5466</p>
+        </a>
+
+        <a href="mailto:info@flashexpress.com" class="contacto-card">
+          <i class="fa-solid fa-envelope"></i>
+          <h4>Correo</h4>
+          <p>info@flashexpress.com</p>
+        </a>
+
+        <a href="https://maps.google.com/?q=San+Isidro+Izalco+Sonsonate" target="_blank" class="contacto-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <h4>Ubicación</h4>
+          <p>San Isidro, Izalco</p>
+        </a>
+
+        <div class="contacto-card">
+          <i class="fa-solid fa-clock"></i>
+          <h4>Horario</h4>
+          <p>Lun–Sáb: 8am – 6pm</p>
+        </div>
+      </div>
+
+      <div class="info-extra">
+        <div>
+          <h4><i class="fa-solid fa-circle-info"></i> Sobre nosotros</h4>
+          <p>Flash Express nació en San Isidro Izalco con la misión de darle a cada negocio y persona la posibilidad de tener productos personalizados de calidad, sin complicaciones y a precios justos.</p>
+        </div>
+        <div>
+          <h4><i class="fa-solid fa-credit-card"></i> Métodos de pago</h4>
+          <p>Efectivo contra entrega · Transferencia bancaria · Chivo Wallet · Tigo Money</p>
+        </div>
+        <div>
+          <h4><i class="fa-solid fa-file-contract"></i> Políticas</h4>
+          <p>Garantía de 30 días por defectos de fábrica. No aplican devoluciones en diseños personalizados ya aprobados por el cliente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="cta-final">
+    <div class="container">
+      <h2>¿Listo para <span class="text-accent">destacar</span>?</h2>
+      <p>Cuéntanos tu idea y la hacemos realidad hoy mismo.</p>
+      <div class="cta-final__botones">
+        <a href="https://wa.me/50375605466" target="_blank" class="btn btn--primary btn--lg">
+          <i class="fa-brands fa-whatsapp"></i> Cotizar ahora
+        </a>
+        <a href="#pedido" class="btn btn--ghost btn--lg cta-final__ghost">
+          Hacer pedido <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__container">
+      <div>
+        <a href="#inicio" class="logo logo--footer">
+          <img src="img/logo.png" alt="Flash Express" class="logo__img logo__img--footer">
+        </a>
+        <p>Personalizamos tus ideas y las convertimos en realidad desde San Isidro, Izalco.</p>
+        <div class="footer__contacto">
+          <span><i class="fa-solid fa-phone"></i> +503 7560-5466</span>
+          <span><i class="fa-solid fa-envelope"></i> info@flashexpress.com</span>
+          <span><i class="fa-solid fa-location-dot"></i> San Isidro, Izalco, Sonsonate</span>
+        </div>
+      </div>
+
+      <div>
+        <h4>Enlaces</h4>
+        <a href="#servicios">Productos</a>
+        <a href="#combos">Combos</a>
+        <a href="#envios">Envíos</a>
+        <a href="#resenas">Reseñas</a>
+        <a href="#faq">FAQ</a>
+      </div>
+
+      <div>
+        <h4>Síguenos</h4>
+        <div class="social">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://wa.me/50375605466" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2025 Flash Express · San Isidro, Izalco, Sonsonate · Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ============ MODAL ============ -->
+  <div class="modal" id="modal">
+    <div class="modal__content">
+      <button class="modal__close" id="modal-close" aria-label="Cerrar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <h3>Cotizar <span id="modal-producto">producto</span></h3>
+      <p>Te llevamos a WhatsApp con tu mensaje listo.</p>
+
+      <div class="form-group">
+        <label for="modal-nombre">Tu nombre</label>
+        <input type="text" id="modal-nombre" placeholder="Ej: Juan Pérez">
+      </div>
+
+      <div class="form-group">
+        <label for="modal-cantidad">Cantidad</label>
+        <input type="number" id="modal-cantidad" min="1" value="1">
+      </div>
+
+      <button class="btn btn--primary btn--full" id="modal-enviar">
+        <i class="fa-brands fa-whatsapp"></i> Enviar por WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- ============ FLOTANTES ============ -->
+  <a href="https://wa.me/50375605466" target="_blank" class="whatsapp-float" aria-label="WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <button class="back-top" id="back-top" aria-label="Volver arriba">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
